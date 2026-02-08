@@ -1,20 +1,10 @@
 package main
 
 import (
-	"fmt"
-	"unsafe"
+	"github.com/DavidMJChoi/goexp/src/pkg"
 )
 
-type hmap struct {
-	count      int
-	B          uint8
-	buckets    unsafe.Pointer
-	oldbuckets unsafe.Pointer
-	// ...
-}
-
 func main() {
-	var m map[int]int
-
-	fmt.Println(len(m))
+	pkg.A()
+	pkg.B()
 }
