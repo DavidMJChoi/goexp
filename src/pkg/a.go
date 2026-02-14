@@ -1,7 +1,10 @@
 package pkg
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func A() {
 	fmt.Println("A!")
+
 }
