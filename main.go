@@ -2,12 +2,11 @@ package main
 
 import (
 	"fmt"
-	"io"
-	"os"
-	"reflect"
 )
 
 func main() {
-	var w io.Writer = os.Stderr
-	fmt.Println(reflect.TypeOf(w))
+	for {
+		go fmt.Print(0)
+		fmt.Print(1)
+	}
 }
